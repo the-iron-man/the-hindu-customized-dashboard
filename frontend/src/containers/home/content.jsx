@@ -4,15 +4,6 @@ import Chip from '@material-ui/core/Chip'
 import uniqBy from 'lodash/uniqBy'
 
 import { minWidth } from '@material-ui/system'
-// import { push } from 'connected-react-router'
-// import { bindActionCreators } from 'redux'
-// import { connect } from 'react-redux'
-// import {
-//   increment,
-//   incrementAsync,
-//   decrement,
-//   decrementAsync
-// } from '../../modules/counter'
 
 const styles = {
   content: {
@@ -190,28 +181,6 @@ const Content = props => {
     </div>
   )
 }
-// const mapStateToProps = ({ counter }) => ({
-//   count: counter.count,
-//   isIncrementing: counter.isIncrementing,
-//   isDecrementing: counter.isDecrementing
-// })
-
-// const mapDispatchToProps = dispatch =>
-//   bindActionCreators(
-//     {
-//       increment,
-//       incrementAsync,
-//       decrement,
-//       decrementAsync,
-//       changePage: () => push('/about-us')
-//     },
-//     dispatch
-//   )
-
-// export default connect(
-//   mapStateToProps,
-//   mapDispatchToProps
-// )(Home)
 
 Content.propTypes = {
   // classes: PropTypes.object.isRequired,

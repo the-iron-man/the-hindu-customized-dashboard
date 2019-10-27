@@ -8,16 +8,6 @@ import Content from './content'
 import filter from 'lodash/filter'
 import { assignIds } from '../../modules/selector'
 
-// import { push } from 'connected-react-router'
-// import { bindActionCreators } from 'redux'
-// import { connect } from 'react-redux'
-// import {
-//   increment,
-//   incrementAsync,
-//   decrement,
-//   decrementAsync
-// } from '../../modules/counter'
-
 const date = new Date()
 const todayDate = date.getFullYear() + "_" + ("0" + (date.getMonth() + 1)).slice(-2)  + "_" + date.getDate()
 
@@ -159,31 +149,7 @@ class Home extends React.Component {
     )
   }
 }
-// const mapStateToProps = state => ({
-//   articleId: state.articleId
-// })
-// const mapStateToProps = ({ counter }) => ({
-//   count: counter.count,
-//   isIncrementing: counter.isIncrementing,
-//   isDecrementing: counter.isDecrementing
-// })
 
-// const mapDispatchToProps = dispatch =>
-//   bindActionCreators(
-//     {
-//       increment,
-//       incrementAsync,
-//       decrement,
-//       decrementAsync,
-//       changePage: () => push('/about-us')
-//     },
-//     dispatch
-//   )
-
-// export default connect(
-//   mapStateToProps,
-//   mapDispatchToProps
-// )(Home)
 
 Home.propTypes = {
   // classes: PropTypes.object.isRequired,
